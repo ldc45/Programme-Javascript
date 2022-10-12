@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #373737
+}
+h1{
+    text-align: center;
+    color: #f9f9f9;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#email{
+    width: 300px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: #292929;
+    border-radius: 6px;
+    color: white;
+}
+
+#form .input__box{
+    position: relative;
+}
+
+#form.invalid .input__box:before{
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 7px;
+    width: 24px;
+    height: 24px;
+    background: url(/img/invalid.png);
+    background-size: cover;
+    z-index: 1000;
+
+}
+
+#form.valid .input__box:before{
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 7px;
+    width: 24px;
+    height: 24px;
+    background: url(/img/valid.png);
+    background-size: cover;
+    z-index: 1000;
+}
+
+#text{
+    display: block;
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 5px;
+}
